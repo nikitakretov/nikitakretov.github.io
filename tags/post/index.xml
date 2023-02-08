@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post on Nikita&#39;s blog</title>
+    <link>https://nikitakretov.github.io/tags/post/</link>
+    <description>Recent content in Post on Nikita&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jan 2023 12:00:00 +0000</lastBuildDate><atom:link href="https://nikitakretov.github.io/tags/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://nikitakretov.github.io/posts/my-first-post/</link>
+      <pubDate>Sun, 01 Jan 2023 12:00:00 +0000</pubDate>
+      
+      <guid>https://nikitakretov.github.io/posts/my-first-post/</guid>
+      <description>Hello and welcome to my new blog! I&amp;rsquo;m so excited to finally be starting this journey, and I hope you&amp;rsquo;ll join me along the way.
+For those who don&amp;rsquo;t know me, I&amp;rsquo;m Nikita, an aspiring web developer. I started this blog as a way to share my thoughts and experiences on web development. Whether you&amp;rsquo;re a fellow enthusiast or just curious, I hope you&amp;rsquo;ll find something here that interests you.</description>
+    </item>
+    
+  </channel>
+</rss>

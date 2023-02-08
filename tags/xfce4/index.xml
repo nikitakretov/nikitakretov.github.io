@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xfce4 on Nikita&#39;s blog</title>
+    <link>https://nikitakretov.github.io/tags/xfce4/</link>
+    <description>Recent content in Xfce4 on Nikita&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nikitakretov.github.io/tags/xfce4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up Japanese Input Method on Arch Linux with X11 and Xfce4</title>
+      <link>https://nikitakretov.github.io/posts/post02/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nikitakretov.github.io/posts/post02/</guid>
+      <description>If you&amp;rsquo;re an Arch Linux user and you need to input Japanese characters, this post will guide you through the setup process. I&amp;rsquo;ll be using X11 and Xfce4 in this tutorial, and I&amp;rsquo;ll be using Fcitx5 and Mozc as the input framework and Japanese Input Method Editor(IME), respectively.
+Prerequisites Before we get started, make sure that you&amp;rsquo;ve uncommented the following locales in /etc/locale.gen:
+en_US.UTF-8 ja_JP.UTF-8 And don&amp;rsquo;t forget to run locale-gen afterwards.</description>
+    </item>
+    
+  </channel>
+</rss>

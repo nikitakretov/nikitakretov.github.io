@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <title>Using SSH to Connect to Remote Servers | Nikita&#39;s blog</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta name="author" content="John">
+    <meta name="dc.copyright" content="Doe">
+    <meta name="description" content="This is only an example value for the meta description">
+    <meta name="keywords" content="example, site, blog">
+
+    
+    <link href="https://nikitakretov.github.iocss/bootswatch/darkly.min.css" rel="stylesheet">
+    
+    <link href="https://nikitakretov.github.iocss/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://nikitakretov.github.iocss/custom.css" rel="stylesheet">
+
+
+
+<script type="text/javascript">
+    var azbalacSettingHeaderMoveTitle = 'false';
+</script>
+<script src="https://nikitakretov.github.iojs/jquery-3.4.1.min.js"></script>
+<script src="https://nikitakretov.github.iojs/functions.js"></script><style>body {}.footer-container { background-color: #29281f; }.footer-container { color: #f9fcf9; }</style>
+
+
+
+<link id="typography-header-title-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo%3A800"><style id="typography-title" type="text/css">#site-header-text a {
+        font-family: Exo;
+    }#site-header-text a {
+        font-size: 50px; 
+    }</style>
+
+<link id="typography-header-subtitle-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo%3A600"><style id="typography-subtitle" type="text/css">#site-description {
+        font-family: Exo;
+    }#site-description {
+        font-size: 30px; 
+    }</style>
+
+<style id="typography-body" type="text/css"></style>
+
+<style id="typography-navbar" type="text/css">nav#navbarMain {
+        font-size: 20px; 
+    }
+    nav#navbarMain ul.dropdown-menu {
+        font-size: 20px;
+    }</style>
+
+<link id="typography-headline-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"><style id="typography-headline" type="text/css">h1, h2, h3, h4, h5, h6 {
+                font-family: Open Sans; 
+            }</style>
+
+
+
+    
+    <script type="text/javascript">
+        var azbalacSettingHeaderColor = { 'bg': '#000000',
+            'transp': '0'
+            };
+
+    </script>
+    <style type="text/css">
+        #site-header-text a, #site-description {
+                background: "#000000";  
+            background:  rgba(0,0,0,0.00);
+            
+        }
+    </style>
+    
+    
+    <style type="text/css">
+        #site-header-box-title {
+            margin-bottom: 0px;
+        }
+    </style>
+    
+    
+    <style type="text/css">
+        #site-header-container-overlay {
+        
+            left: 20px;
+        
+        
+            top: 20px;
+        
+        }
+    </style>
+    
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+        <script src="//cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+
+<body>
+
+<div id="header" role="banner" style="">
+
+    <div class="container">
+        <header class="masthead">
+            <div>
+                <div id="site-header-container-above" class="row align-items-center">
+                    
+                </div>
+            </div>
+
+
+            
+
+            <div id="site-header-above"><a href="https://nikitakretov.github.io" rel="home">
+                <picture>
+                        <source media="(min-width: 1200px)" srcset="https://nikitakretov.github.ioimg/header_bg_example.jpg 1110w">
+                        <source media="(min-width: 992px) and (max-width: 1199.98px)" srcset="https://nikitakretov.github.ioimg/header_bg_example.jpg 930w">
+                        <source media="(min-width: 768px) and (max-width: 991.98px)" srcset="https://nikitakretov.github.ioimg/header_bg_example.jpg 690w">
+                        <source media="(min-width: 576px) and (max-width: 767.98px)" srcset="https://nikitakretov.github.ioimg/header_bg_example.jpg 510w">
+                        <source media="(max-width: 575.98px)" srcset="https://nikitakretov.github.ioimg/header_bg_example.jpg 476w">
+                        <img id="site-header-image" src="https://nikitakretov.github.ioimg/header_bg_example.jpg" style="max-width: 100%; width: 100%">
+                </picture>
+                </a>
+
+                <div id="site-header-container-overlay" class="position-absolute  fixed-top ">
+                    <div id="site-header-box-title" class=" d-flex justify-content-start ">
+                        <h1 class="azbalac-title" id="site-header-text"><a class="header-url" style="color: #ffffff;" href="https://nikitakretov.github.io">Nikita&#39;s blog</a></h1>
+                    </div>
+                    
+                    <div id="site-header-box-subtitle" class=" d-flex justify-content-start ">   
+                        <h2 class="azbalac-subtitle" id="site-description" style="color: #F39C12;">AI generated</h2>
+                    </div>
+                </div>
+                
+             
+            </div>
+
+    
+    <nav id="navbarMain" class="navbar navbar-expand-sm justify-content-between mb-3 navbar-dark bg-primary" role="navigation">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+      
+            
+            <div class="sticky-top navbar-collapse collapse  " id="navbarSupportedContent"> 
+                <ul class="navbar-nav">
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="/">
+      
+      Home
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="/posts/">
+      
+      Blog
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="/about/">
+      
+      About
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+</ul>
+             
+            </div>
+        
+            
+    </nav> 
+    
+
+
+
+      </header>
+    </div> 
+</div>
+
+
+    <div id="main">
+        <div class="container">
+            <div class="row"><div class="col-md" id="content">
+
+
+
+
+
+<h1>Using SSH to Connect to Remote Servers</h1>
+
+    <div class="post-meta"><span class="byline-icon fa fa-clock-o" aria-hidden="true"></span> <span class="screen-reader-text">Date: </span><time datetime="2023-01-04T00:00:00Z">04.01.2023</time> - 
+    <span class="byline-icon fa fa-user" aria-hidden="true"></span><span class="screen-reader-text">Author: </span> Nikita
+     </div>
+
+
+  <p>SSH (Secure Shell) is a network protocol that provides secure, encrypted communication between two untrusted hosts over an insecure network. It&rsquo;s commonly used for logging into remote servers, executing commands, transferring files securely, and setting up virtual private networks (VPNs). SSH provides a secure alternative to traditional Telnet and FTP protocols.</p>
+<h3 id="installation">Installation</h3>
+<p>To install <code>openssh</code>, run the following command:</p>
+<pre tabindex="0"><code>	sudo pacman -Syu openssh
+</code></pre><p>To use <code>openssh</code> as a client and connect to a server, run:</p>
+<pre tabindex="0"><code>	ssh remote_user@remote.server.com
+</code></pre><p>This command uses the standard port 22. If a different port is needed, you can specify it with the <code>-p</code> flag, like this: <code>-p 2222</code>. In this example, you are logging in as the user <code>remote_user</code> on the server <code>remote.server.com</code>. The server can be specified using a domain name, local domain name, or IP address.</p>
+<h3 id="client-configuration">Client Configuration</h3>
+<p>You can configure the client in <code>~/.ssh/config</code> to store common options and hosts. Options can be declared globally or restricted to specific hosts. Here&rsquo;s an example:</p>
+<pre tabindex="0"><code>	Host github.com
+		AddKeysToAgent yes
+		User local_user
+		Hostname github.com
+		IdentityFile ~/.ssh/local_user-github
+</code></pre><p>In this example, you&rsquo;re specifying options for <code>github.com</code> for the user <code>local_user</code>. The <code>AddKeysToAgent</code> option adds SSH keys to the <code>ssh-agent</code> automatically, and the <code>IdentityFile</code> points to the private key used for <code>github.com</code>.</p>
+<p>The server-side configuration is specified in <code>/etc/ssh/sshd_config</code>. Here, you can make changes such as disabling password authentication, changing ssh ports, enabling X11 forwarding, etc. You can also specify config settings on a per-user basis.</p>
+<h3 id="executing-commands-directly">Executing Commands Directly</h3>
+<p>With SSH, you can not only log into a user account but also execute a single command without logging in. For example:</p>
+<pre tabindex="0"><code>	ssh remote_user@remote.server.com ls
+</code></pre><p>This command will execute ls in the home folder of <code>remote_user</code>. SSH works with pipes, so you can run commands like this:</p>
+<pre tabindex="0"><code>	ssh remote_user@remote.server.com ls | grep PATTERN
+</code></pre><p>This will grep locally the remote output of <code>ls</code>. Or you can run:</p>
+<pre tabindex="0"><code>	ls | ssh remote_user@remote.server.com grep PATTERN
+</code></pre><p>This will grep remotely the local output of <code>ls</code>.</p>
+<h3 id="ssh-keys">SSH Keys</h3>
+<p>SSH keys are a secure authentication method used to access remote machines over a network. They offer a secure and convenient alternative to password-based authentication, which can be vulnerable to brute-force attacks and other security breaches.</p>
+<p>An SSH key pair consists of a private key and a public key. The private key is kept on the client machine and should be kept confidential, while the public key is copied to the remote host and stored in the <code>authorized_keys</code> file. When a client tries to access the remote host, the host checks the client&rsquo;s public key against the <code>authorized_keys</code> file. If there is a match, the host grants access without requiring a password.</p>
+<p>To ensure the security of SSH keys, it is recommended to use a passphrase. In the event that the key is stolen, the attacker will not be able to use it without knowing the passphrase.</p>
+<h3 id="ssh-key-types">SSH Key Types</h3>
+<p>There are several types of SSH keys in use, including <code>ECDSA</code> keys, which are small in size and perform well but may have some patent-related issues, <code>Ed25519</code> keys, which are similar to <code>ECDSA</code> keys in terms of size, performance, and security but require newer versions of OpenSSH, and <code>RSA</code> keys, which are widely used and are an established standard but are less secure for the same key size and have the best compatibility. If possible, it is preferred to use <code>Ed25519</code> keys.</p>
+<h3 id="key-generation">Key Generation</h3>
+<p>To generate a key pair, you can run the following command:</p>
+<pre tabindex="0"><code>	ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519
+</code></pre><p>It is important to choose a strong and memorable passphrase to prevent unauthorized access if the private key is stolen. You can use ssh-agent or gpg-agent so you don&rsquo;t have to type the passphrase every time.</p>
+<h3 id="key-based-authentication">Key-Based Authentication</h3>
+<p>The ssh program looks into the <code>.ssh/authorized_key</code>s file to determine which clients should be granted access. To copy a public key, you can use the following commands:</p>
+<pre tabindex="0"><code>	cat ~/.ssh/id_ed25519.pub | ssh remote_user@remote.server.com &#34;mkdir -p ~/.ssh &amp;&amp; cat &gt;&gt; ~/.ssh/authorized_keys &amp;&amp; chmod 700 ~/.ssh &amp;&amp; chmod 600 ~/.ssh/authorized_keys&#34;
+</code></pre><p>Or, you can use the simpler <code>ssh-copy-id</code> command if it&rsquo;s available:</p>
+<pre tabindex="0"><code>	ssh-copy-id -i .ssh/id_ed25519 remote_user@remote.server.com
+</code></pre><h3 id="copying-files-with-scp">Copying Files with SCP</h3>
+<p><code>scp</code> (Secure Copy) is a command used to transfer files securely over SSH. It operates in a similar way to the regular <code>cp</code> command, but uses an encrypted connection for added security.</p>
+<p>To copy a local file named <code>file.txt</code> to the remote host <code>remote.server.com</code> as the user <code>remote_user</code>, run the following command:</p>
+<pre tabindex="0"><code>	scp file.txt remote_user@remote.server.com:/path/to/destination/
+</code></pre><p>To copy a file from the remote host to the local machine, use this syntax:</p>
+<pre tabindex="0"><code>	scp remote_user@remote.server.com:/path/to/remote/file.txt /path/to/local/destination/
+</code></pre><p>Entire directories can also be copied recursively by using the <code>-r</code> option:</p>
+<pre tabindex="0"><code>	scp -r remote_user@remote.server.com:/path/to/remote/directory/ /path/to/local/destination/
+</code></pre><p><code>scp</code> uses the same authentication mechanism as SSH, and you can choose between password-based or key-based authentication when connecting to the remote host.</p>
+<p>If the remote machine is behind a firewall, you may need to use a specific port to connect. The <code>-P</code> option can be used to specify the port number that should be used for the firewall passthrough.&quot;</p>
+<h3 id="executing-commands-on-a-remote-machine-without-a-full-login">Executing Commands on a Remote Machine Without a Full Login</h3>
+<p>You can execute commands on a remote machine via SSH without logging in to the host. Simply use the following syntax:</p>
+<pre tabindex="0"><code>	ssh remote_user@remote.server.com &#39;command&#39;
+</code></pre><p>For example, to check the available disk space on the remote machine, you can use the <code>df -h</code> command like this:</p>
+<pre tabindex="0"><code>	ssh remote_user@remote.server.com &#39;df -h&#39;
+	remote_user@remote.server.com&#39;s password:
+	udev             16G     0   16G   0% /dev
+	tmpfs           3.2G  5.3M  3.2G   1% /run
+	/dev/md2         96G  6.2G   85G   7% /
+</code></pre><p>The single command line is executed by a shell on the remote machine and the output is displayed. The remote output can also be redirected into a local file:</p>
+<pre tabindex="0"><code>	ssh remote_user@remote.server.com &#39;curl wttr.in&#39; &gt; weather.txt
+</code></pre><p>Note that you only receive the output of the command, but don&rsquo;t log in to the remote machine.</p>
+<h3 id="reverse-ssh">Reverse SSH</h3>
+<p>Reverse SSH is a technique that allows you to establish a secure shell connection from a remote server that is behind a Network Address Translation (NAT) to a local machine with at least one accessible port from the outside. To establish a connection, the remote server first needs to connect to the local machine</p>
+<p>The following command should be executed on the remote server:</p>
+<pre tabindex="0"><code>	ssh -R 2222:localhost:22 -p 55555 local_user@local_machine
+</code></pre><p>And on the local machine, execute this simpler command:</p>
+<pre tabindex="0"><code>	ssh remote_user@localhost -p 2222
+</code></pre><p>In this example, port 55555 is an open port configured in the ssh daemon configuration file (sshd_config), and port 2222 is an arbitrary unused port. According to the documentation the port 22 in the ssh command executed on the remote machine refers to the port on the local machine, but in practice it seems to refer to the ssh port on the remote machine. More experementation is needed.</p>
+<p>I faced some challenges while setting up the reverse SSH tunnel and encountered errors when trying to connect from my local machine to an Arch setup. However, I was able to successfully connect to a Raspbian remote machine. I think it would take more experimentation to grasp the concept of reverse SSH fully. Here are the errors I encountered:</p>
+<pre tabindex="0"><code>	(local_user@local_machine) Password:
+	Authenticated to local_machine ([local_machine]:55555) using &#34;keyboard-interactive&#34;.
+	debug1: Remote connections from LOCALHOST:2222 forwarded to local address localhost:22
+	debug1: channel 0: new session [client-session] (inactive timeout: 0)
+	debug1: Requesting no-more-sessions@openssh.com
+	debug1: Entering interactive session.
+	debug1: pledge: filesystem
+	debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+	debug1: client_input_hostkeys: searching /home/remote_user/.ssh/known_hosts for [local_machine]:55555 / (none)
+	debug1: client_input_hostkeys: searching /home/remote_user/.ssh/known_hosts2 for [local_machine]:55555 / (none)
+	debug1: client_input_hostkeys: hostkeys file /home/remote_user/.ssh/known_hosts2 does not exist
+	debug1: client_input_hostkeys: host key found matching a different name/address, skipping UserKnownHostsFile update
+	debug1: remote forward success for: listen 2222, connect localhost:22
+	debug1: pledge: network
+	Last login: Mon Feb  6 11:03:40 2023 from 192.168.xx.xx
+	Welcome to macOS, local_user
+	Today is 02-06-2023 11:04:27
+	[local_user@local_machine ~]$ debug1: client_input_channel_open: ctype forwarded-tcpip rchan 3 win 2097152 max 32768
+	debug1: client_request_forwarded_tcpip: listen localhost port 2222, originator ::1 port 49381
+	debug1: connect_next: start for host localhost ([::1]:22)
+	debug1: connect_next: connect host localhost ([::1]:22) in progress, fd=7
+	debug1: channel 1: new forwarded-tcpip [::1] (inactive timeout: 0)
+	debug1: confirm forwarded-tcpip
+	debug1: channel 1: connection failed: Connection refused
+	debug1: connect_next: start for host localhost ([127.0.0.1]:22)
+	debug1: connect_next: connect host localhost ([127.0.0.1]:22) in progress, fd=8
+	debug1: channel 1: connection failed: Connection refused
+	connect_to localhost port 22: failed.
+	debug1: channel 1: free: ::1, nchannels 2
+</code></pre><p>If anyone knows how to solve this problem, please let me know.</p>
+<h3 id="references">References</h3>
+<p><a href="https://wiki.archlinux.org/title/OpenSSH">https://wiki.archlinux.org/title/OpenSSH</a></p>
+<p><a href="http://teaching.idallen.com/cst8207/15w/notes/445_quotes_for_remote.html">http://teaching.idallen.com/cst8207/15w/notes/445_quotes_for_remote.html</a></p>
+<p><a href="https://austingwalters.com/configure-ssh-on-an-arch-linux-server/">https://austingwalters.com/configure-ssh-on-an-arch-linux-server/</a></p>
+<p><a href="https://www.freecodecamp.org/news/the-ultimate-guide-to-ssh-setting-up-ssh-keys/">https://www.freecodecamp.org/news/the-ultimate-guide-to-ssh-setting-up-ssh-keys/</a></p>
+<p><a href="https://www.youtube.com/watch?v=lRMAJwMQ0Vc">https://www.youtube.com/watch?v=lRMAJwMQ0Vc</a></p>
+<p><a href="https://missing.csail.mit.edu/2020/command-line/#remote-machines">https://missing.csail.mit.edu/2020/command-line/#remote-machines</a></p>
+<p><a href="https://www.youtube.com/watch?v=ORcvSkgdA58">https://www.youtube.com/watch?v=ORcvSkgdA58</a></p>
+
+
+                </div>
+                    <aside class="col-md-3 tikva-sidebar">
+  
+
+
+    
+
+        <div class="col">
+    
+<!--    <p class="mb-0">pic</p> -->
+
+
+</div>
+
+
+    
+
+        <div class="col">
+    <p>Hi, I&rsquo;m Nikita!</p>
+<p>I&rsquo;m aspiring web developer. I started this blog as a way to share my thoughts and experiences on web development.</p>
+<p>When I&rsquo;m not blogging, you can find me on discord. I&rsquo;m also a big fan of graphic arts and design.</p>
+<p>Thanks for visiting my blog! I hope you find something here that you enjoy. Feel free to drop me a message and say hello..</p>
+
+</div>
+
+
+    
+
+</aside>
+</div>
+        </div>
+    </div>
+
+    
+        <div class="footer-container" style="">
+    <div class="container">
+        <footer>
+
+            <div class="row">
+            
+            
+                
+                    <div class="col">
+    <!-- raw HTML omitted -->
+
+</div>
+                
+                    <div class="col">
+    <!-- raw HTML omitted -->
+
+</div>
+                
+                    <div class="col">
+    <p>You can find me on Discord.
+<!-- raw HTML omitted -->
+<a href="https://discordapp.com/users/1067151777578889237">Discord</a></p>
+
+</div>
+                
+            
+
+            </div>
+        </footer>
+    </div>
+</div>
+    
+    
+        
+<div class="subfooter-container">
+
+    <div class="container">
+        <div class="footer">
+            <div class="row wrapper padding">
+                <div class="col-xs-12 col-md-12">
+
+            
+            
+                
+                        <p>Powered by <a href="https://gohugo.io">Hugo</a>. Theme <a href="https://github.com/geschke/hugo-tikva">Tikva</a> by <a href="https://www.kuerbis.org">Ralf Geschke</a>. © 2023 Nikita Kretov.</p>
+
+
+                
+            
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <div id="media-width-detection-element"></div>
+
+<script src="https://nikitakretov.github.iojs/popper.min.js"></script>
+<script src="https://nikitakretov.github.iojs/bootstrap.min.js"></script>
+
+
+</body>
+</html>

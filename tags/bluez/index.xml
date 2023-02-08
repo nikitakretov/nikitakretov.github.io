@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bluez on Nikita&#39;s blog</title>
+    <link>https://nikitakretov.github.io/tags/bluez/</link>
+    <description>Recent content in bluez on Nikita&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nikitakretov.github.io/tags/bluez/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux Bluetooth Audio Setup Guide</title>
+      <link>https://nikitakretov.github.io/posts/post03/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nikitakretov.github.io/posts/post03/</guid>
+      <description>In this blog post, I&amp;rsquo;ll show you how to set up Bluetooth audio on Arch Linux. We will be using bluez for handling Bluetooth and pulseaudio for handling audio. The bluez and bluez-utils packages provide the Bluetooth protocol stack and control utilities, respectively. The pulseaudio-bluetooth package provides Bluetooth support for the pulseaudio sound server, which should already be installed on your computer.
+Installing Required Packages To get started, we will need to install bluez, bluez-utils and pulseaudio-bluetooth packages.</description>
+    </item>
+    
+  </channel>
+</rss>

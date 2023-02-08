@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <title>Setting up Japanese Input Method on Arch Linux with X11 and Xfce4 | Nikita&#39;s blog</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta name="author" content="John">
+    <meta name="dc.copyright" content="Doe">
+    <meta name="description" content="This is only an example value for the meta description">
+    <meta name="keywords" content="example, site, blog">
+
+    
+    <link href="https://nikitakretov.github.iocss/bootswatch/darkly.min.css" rel="stylesheet">
+    
+    <link href="https://nikitakretov.github.iocss/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://nikitakretov.github.iocss/custom.css" rel="stylesheet">
+
+
+
+<script type="text/javascript">
+    var azbalacSettingHeaderMoveTitle = 'false';
+</script>
+<script src="https://nikitakretov.github.iojs/jquery-3.4.1.min.js"></script>
+<script src="https://nikitakretov.github.iojs/functions.js"></script><style>body {}.footer-container { background-color: #29281f; }.footer-container { color: #f9fcf9; }</style>
+
+
+
+<link id="typography-header-title-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo%3A800"><style id="typography-title" type="text/css">#site-header-text a {
+        font-family: Exo;
+    }#site-header-text a {
+        font-size: 50px; 
+    }</style>
+
+<link id="typography-header-subtitle-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo%3A600"><style id="typography-subtitle" type="text/css">#site-description {
+        font-family: Exo;
+    }#site-description {
+        font-size: 30px; 
+    }</style>
+
+<style id="typography-body" type="text/css"></style>
+
+<style id="typography-navbar" type="text/css">nav#navbarMain {
+        font-size: 20px; 
+    }
+    nav#navbarMain ul.dropdown-menu {
+        font-size: 20px;
+    }</style>
+
+<link id="typography-headline-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"><style id="typography-headline" type="text/css">h1, h2, h3, h4, h5, h6 {
+                font-family: Open Sans; 
+            }</style>
+
+
+
+    
+    <script type="text/javascript">
+        var azbalacSettingHeaderColor = { 'bg': '#000000',
+            'transp': '0'
+            };
+
+    </script>
+    <style type="text/css">
+        #site-header-text a, #site-description {
+                background: "#000000";  
+            background:  rgba(0,0,0,0.00);
+            
+        }
+    </style>
+    
+    
+    <style type="text/css">
+        #site-header-box-title {
+            margin-bottom: 0px;
+        }
+    </style>
+    
+    
+    <style type="text/css">
+        #site-header-container-overlay {
+        
+            left: 20px;
+        
+        
+            top: 20px;
+        
+        }
+    </style>
+    
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+        <script src="//cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+
+<body>
+
+<div id="header" role="banner" style="">
+
+    <div class="container">
+        <header class="masthead">
+            <div>
+                <div id="site-header-container-above" class="row align-items-center">
+                    
+                </div>
+            </div>
+
+
+            
+
+            <div id="site-header-above"><a href="https://nikitakretov.github.io" rel="home">
+                <picture>
+                        <source media="(min-width: 1200px)" srcset="https://nikitakretov.github.ioimg/header_bg_example.jpg 1110w">
+                        <source media="(min-width: 992px) and (max-width: 1199.98px)" srcset="https://nikitakretov.github.ioimg/header_bg_example.jpg 930w">
+                        <source media="(min-width: 768px) and (max-width: 991.98px)" srcset="https://nikitakretov.github.ioimg/header_bg_example.jpg 690w">
+                        <source media="(min-width: 576px) and (max-width: 767.98px)" srcset="https://nikitakretov.github.ioimg/header_bg_example.jpg 510w">
+                        <source media="(max-width: 575.98px)" srcset="https://nikitakretov.github.ioimg/header_bg_example.jpg 476w">
+                        <img id="site-header-image" src="https://nikitakretov.github.ioimg/header_bg_example.jpg" style="max-width: 100%; width: 100%">
+                </picture>
+                </a>
+
+                <div id="site-header-container-overlay" class="position-absolute  fixed-top ">
+                    <div id="site-header-box-title" class=" d-flex justify-content-start ">
+                        <h1 class="azbalac-title" id="site-header-text"><a class="header-url" style="color: #ffffff;" href="https://nikitakretov.github.io">Nikita&#39;s blog</a></h1>
+                    </div>
+                    
+                    <div id="site-header-box-subtitle" class=" d-flex justify-content-start ">   
+                        <h2 class="azbalac-subtitle" id="site-description" style="color: #F39C12;">AI generated</h2>
+                    </div>
+                </div>
+                
+             
+            </div>
+
+    
+    <nav id="navbarMain" class="navbar navbar-expand-sm justify-content-between mb-3 navbar-dark bg-primary" role="navigation">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+      
+            
+            <div class="sticky-top navbar-collapse collapse  " id="navbarSupportedContent"> 
+                <ul class="navbar-nav">
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="/">
+      
+      Home
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="/posts/">
+      
+      Blog
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="/about/">
+      
+      About
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+</ul>
+             
+            </div>
+        
+            
+    </nav> 
+    
+
+
+
+      </header>
+    </div> 
+</div>
+
+
+    <div id="main">
+        <div class="container">
+            <div class="row"><div class="col-md" id="content">
+
+
+
+
+
+<h1>Setting up Japanese Input Method on Arch Linux with X11 and Xfce4</h1>
+
+    <div class="post-meta"><span class="byline-icon fa fa-clock-o" aria-hidden="true"></span> <span class="screen-reader-text">Date: </span><time datetime="2023-01-02T00:00:00Z">02.01.2023</time> - 
+    <span class="byline-icon fa fa-user" aria-hidden="true"></span><span class="screen-reader-text">Author: </span> Nikita
+     </div>
+
+
+  <p>If you&rsquo;re an Arch Linux user and you need to input Japanese characters, this post will guide you through the setup process. I&rsquo;ll be using X11 and Xfce4 in this tutorial, and I&rsquo;ll be using Fcitx5 and Mozc as the input framework and Japanese Input Method Editor(IME), respectively.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Before we get started, make sure that you&rsquo;ve uncommented the following locales in <code>/etc/locale.gen</code>:</p>
+<pre tabindex="0"><code>	en_US.UTF-8
+	ja_JP.UTF-8
+</code></pre><p>And don&rsquo;t forget to run <code>locale-gen</code> afterwards.</p>
+<p>Next, install the Japanese font packages:</p>
+<pre tabindex="0"><code>	sudo pacman -S noto-fonts-cjk otf-ipafont ttf-hanazono and ttf-sazanami
+</code></pre><h3 id="installing-fcitx5-and-mozc">Installing Fcitx5 and Mozc</h3>
+<p>Fcitx5 is a lightweight input method framework that provides a language support independent environment for Linux. It supports multiple languages, including Japanese, and also provides other useful non-CJK features. Mozc is a free and open-source version of the Google Japanese Input.</p>
+<p>To install Fcitx5 and Mozc, run the following command:</p>
+<pre tabindex="0"><code>	sudo pacman -Syu fcitx5 fcitx5-configtool fcitx5-mozc fcitx5-qt fcitx5-gtk
+</code></pre><p><code>fcitx5</code> package provides the main Fcitx5 program. The packages <code>fcitx5-qt</code> and <code>fcitx5-gtk</code> provide the integration for qt and gtk respectively, <code>fcitx5-configtool</code> provides the configuration GUI, and <code>fcitx5-mozc</code> provides the Japanese input method Mozc.</p>
+<h3 id="setting-environment-variables-for-fcitx5-im-module">Setting environment variables for Fcitx5 IM module</h3>
+<p>Set the following enviromnet variables in your <code>.bash_profile</code> file:</p>
+<pre tabindex="0"><code>	export GTK_IM_MODULE=fcitx5
+	export XMODIFIERS=@im=fcitx5
+	export QT_IM_MODULE=fcitx5
+	export XIM_PROGRAM=/usr/bin/fcitx5
+</code></pre><p>This will set up Fcitx5 as the default input method for GTK and QT applications. The last line export <code>XIM_PROGRAM=/usr/bin/fcitx</code> is a bit unusual and it&rsquo;s used to enable Fcitx5 in the <code>st</code> terminal.</p>
+<p>Note that if you&rsquo;re using <code>st</code> terminal, you need to apply the patch <code>st-fix-keyboard-input-20180605-dc3b5ba.diff</code> to make it work with non-latin keyboard layouts. You can find the patch on the following link: <a href="https://st.suckless.org/patches/fix_keyboard_input/">https://st.suckless.org/patches/fix_keyboard_input/</a></p>
+<h3 id="using-fcitx5-configtool">Using Fcitx5 Configtool</h3>
+<p>The <code>fcitx5-configtool</code> is a user-friendly graphical interface for configuring Fcitx5. To access it, you can either launch the tool from the command line or locate the fcitx5 icon near the clock widget in the panel and click on &ldquo;Configure&rdquo;.</p>
+<p>Once inside, check the &ldquo;Available Input Method&rdquo; section, search for Mozc and double-click it. If necessary, uncheck the &ldquo;Only Show Current Language&rdquo; option to display Mozc in the list.</p>
+<p><img src="/img/fcitx5-configtool-input-method-tab.png" alt="fcitx5-configtool input method tab" title="fcitx5-configtool input method tab"></p>
+<p>In &ldquo;Global Options&rdquo; tab I changed &ldquo;Trigger Input Method&rdquo; to Alt+Left Shift and set &ldquo;Temporary switch between first and current Input Method&rdquo; to Super+Left Shift.</p>
+<p><img src="/img/fcitx5-configtool-global-options-tab.png" alt="fcitx5-configtool global options tab" title="fcitx5-configtool global options tab"></p>
+<p>That&rsquo;s it! Now you should be able to input Japanese characters on your Arch Linux setup with X11 and Xfce4.</p>
+<h3 id="references">References</h3>
+<p><a href="https://wiki.archlinux.org/title/Localization/Japanese">https://wiki.archlinux.org/title/Localization/Japanese</a>
+<a href="https://fcitx-im.org/wiki/Setup_Fcitx_5">https://fcitx-im.org/wiki/Setup_Fcitx_5</a>
+<a href="https://jeffreytse.net/computer/2020/11/19/how-to-use-fcitx5-elegantly-on-arch-linux.html">https://jeffreytse.net/computer/2020/11/19/how-to-use-fcitx5-elegantly-on-arch-linux.html</a></p>
+
+
+                </div>
+                    <aside class="col-md-3 tikva-sidebar">
+  
+
+
+    
+
+        <div class="col">
+    
+<!--    <p class="mb-0">pic</p> -->
+
+
+</div>
+
+
+    
+
+        <div class="col">
+    <p>Hi, I&rsquo;m Nikita!</p>
+<p>I&rsquo;m aspiring web developer. I started this blog as a way to share my thoughts and experiences on web development.</p>
+<p>When I&rsquo;m not blogging, you can find me on discord. I&rsquo;m also a big fan of graphic arts and design.</p>
+<p>Thanks for visiting my blog! I hope you find something here that you enjoy. Feel free to drop me a message and say hello..</p>
+
+</div>
+
+
+    
+
+</aside>
+</div>
+        </div>
+    </div>
+
+    
+        <div class="footer-container" style="">
+    <div class="container">
+        <footer>
+
+            <div class="row">
+            
+            
+                
+                    <div class="col">
+    <!-- raw HTML omitted -->
+
+</div>
+                
+                    <div class="col">
+    <!-- raw HTML omitted -->
+
+</div>
+                
+                    <div class="col">
+    <p>You can find me on Discord.
+<!-- raw HTML omitted -->
+<a href="https://discordapp.com/users/1067151777578889237">Discord</a></p>
+
+</div>
+                
+            
+
+            </div>
+        </footer>
+    </div>
+</div>
+    
+    
+        
+<div class="subfooter-container">
+
+    <div class="container">
+        <div class="footer">
+            <div class="row wrapper padding">
+                <div class="col-xs-12 col-md-12">
+
+            
+            
+                
+                        <p>Powered by <a href="https://gohugo.io">Hugo</a>. Theme <a href="https://github.com/geschke/hugo-tikva">Tikva</a> by <a href="https://www.kuerbis.org">Ralf Geschke</a>. © 2023 Nikita Kretov.</p>
+
+
+                
+            
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <div id="media-width-detection-element"></div>
+
+<script src="https://nikitakretov.github.iojs/popper.min.js"></script>
+<script src="https://nikitakretov.github.iojs/bootstrap.min.js"></script>
+
+
+</body>
+</html>

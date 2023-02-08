@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <title>Arch Linux Bluetooth Audio Setup Guide | Nikita&#39;s blog</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta name="author" content="John">
+    <meta name="dc.copyright" content="Doe">
+    <meta name="description" content="This is only an example value for the meta description">
+    <meta name="keywords" content="example, site, blog">
+
+    
+    <link href="https://nikitakretov.github.iocss/bootswatch/darkly.min.css" rel="stylesheet">
+    
+    <link href="https://nikitakretov.github.iocss/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://nikitakretov.github.iocss/custom.css" rel="stylesheet">
+
+
+
+<script type="text/javascript">
+    var azbalacSettingHeaderMoveTitle = 'false';
+</script>
+<script src="https://nikitakretov.github.iojs/jquery-3.4.1.min.js"></script>
+<script src="https://nikitakretov.github.iojs/functions.js"></script><style>body {}.footer-container { background-color: #29281f; }.footer-container { color: #f9fcf9; }</style>
+
+
+
+<link id="typography-header-title-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo%3A800"><style id="typography-title" type="text/css">#site-header-text a {
+        font-family: Exo;
+    }#site-header-text a {
+        font-size: 50px; 
+    }</style>
+
+<link id="typography-header-subtitle-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo%3A600"><style id="typography-subtitle" type="text/css">#site-description {
+        font-family: Exo;
+    }#site-description {
+        font-size: 30px; 
+    }</style>
+
+<style id="typography-body" type="text/css"></style>
+
+<style id="typography-navbar" type="text/css">nav#navbarMain {
+        font-size: 20px; 
+    }
+    nav#navbarMain ul.dropdown-menu {
+        font-size: 20px;
+    }</style>
+
+<link id="typography-headline-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"><style id="typography-headline" type="text/css">h1, h2, h3, h4, h5, h6 {
+                font-family: Open Sans; 
+            }</style>
+
+
+
+    
+    <script type="text/javascript">
+        var azbalacSettingHeaderColor = { 'bg': '#000000',
+            'transp': '0'
+            };
+
+    </script>
+    <style type="text/css">
+        #site-header-text a, #site-description {
+                background: "#000000";  
+            background:  rgba(0,0,0,0.00);
+            
+        }
+    </style>
+    
+    
+    <style type="text/css">
+        #site-header-box-title {
+            margin-bottom: 0px;
+        }
+    </style>
+    
+    
+    <style type="text/css">
+        #site-header-container-overlay {
+        
+            left: 20px;
+        
+        
+            top: 20px;
+        
+        }
+    </style>
+    
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+        <script src="//cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+
+<body>
+
+<div id="header" role="banner" style="">
+
+    <div class="container">
+        <header class="masthead">
+            <div>
+                <div id="site-header-container-above" class="row align-items-center">
+                    
+                </div>
+            </div>
+
+
+            
+
+            <div id="site-header-above"><a href="https://nikitakretov.github.io" rel="home">
+                <picture>
+                        <source media="(min-width: 1200px)" srcset="https://nikitakretov.github.ioimg/header_bg_example.jpg 1110w">
+                        <source media="(min-width: 992px) and (max-width: 1199.98px)" srcset="https://nikitakretov.github.ioimg/header_bg_example.jpg 930w">
+                        <source media="(min-width: 768px) and (max-width: 991.98px)" srcset="https://nikitakretov.github.ioimg/header_bg_example.jpg 690w">
+                        <source media="(min-width: 576px) and (max-width: 767.98px)" srcset="https://nikitakretov.github.ioimg/header_bg_example.jpg 510w">
+                        <source media="(max-width: 575.98px)" srcset="https://nikitakretov.github.ioimg/header_bg_example.jpg 476w">
+                        <img id="site-header-image" src="https://nikitakretov.github.ioimg/header_bg_example.jpg" style="max-width: 100%; width: 100%">
+                </picture>
+                </a>
+
+                <div id="site-header-container-overlay" class="position-absolute  fixed-top ">
+                    <div id="site-header-box-title" class=" d-flex justify-content-start ">
+                        <h1 class="azbalac-title" id="site-header-text"><a class="header-url" style="color: #ffffff;" href="https://nikitakretov.github.io">Nikita&#39;s blog</a></h1>
+                    </div>
+                    
+                    <div id="site-header-box-subtitle" class=" d-flex justify-content-start ">   
+                        <h2 class="azbalac-subtitle" id="site-description" style="color: #F39C12;">AI generated</h2>
+                    </div>
+                </div>
+                
+             
+            </div>
+
+    
+    <nav id="navbarMain" class="navbar navbar-expand-sm justify-content-between mb-3 navbar-dark bg-primary" role="navigation">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+      
+            
+            <div class="sticky-top navbar-collapse collapse  " id="navbarSupportedContent"> 
+                <ul class="navbar-nav">
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="/">
+      
+      Home
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="/posts/">
+      
+      Blog
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="/about/">
+      
+      About
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+</ul>
+             
+            </div>
+        
+            
+    </nav> 
+    
+
+
+
+      </header>
+    </div> 
+</div>
+
+
+    <div id="main">
+        <div class="container">
+            <div class="row"><div class="col-md" id="content">
+
+
+
+
+
+<h1>Arch Linux Bluetooth Audio Setup Guide</h1>
+
+    <div class="post-meta"><span class="byline-icon fa fa-clock-o" aria-hidden="true"></span> <span class="screen-reader-text">Date: </span><time datetime="2023-01-03T00:00:00Z">03.01.2023</time> - 
+    <span class="byline-icon fa fa-user" aria-hidden="true"></span><span class="screen-reader-text">Author: </span> Nikita
+     </div>
+
+
+  <p>In this blog post, I&rsquo;ll show you how to set up Bluetooth audio on Arch Linux. We will be using <code>bluez</code> for handling Bluetooth and <code>pulseaudio</code> for handling audio. The <code>bluez</code> and <code>bluez-utils</code> packages provide the Bluetooth protocol stack and control utilities, respectively. The <code>pulseaudio-bluetooth</code> package provides Bluetooth support for the <code>pulseaudio</code> sound server, which should already be installed on your computer.</p>
+<h3 id="installing-required-packages">Installing Required Packages</h3>
+<p>To get started, we will need to install <code>bluez</code>, <code>bluez-utils</code> and <code>pulseaudio-bluetooth</code> packages. This can be done by running the following command in the terminal:</p>
+<pre tabindex="0"><code>	sudo pacman -Syu bluez bluez-utils pulseaudio-bluetooth
+</code></pre><p>Next, start and enable the Bluetooth service:</p>
+<pre tabindex="0"><code>	sudo systemctl --now enable bluetooth.service
+</code></pre><p>By default, the Bluetooth daemon will only allow access to bnep0 devices for users who are members of the <code>lp</code> group. Make sure to add your user to this group if you plan on connecting to a Bluetooth tether. If desired, you can change the required group in the file  <code>/usr/share/dbus-1/system.d/bluetooth.conf</code>.</p>
+<pre tabindex="0"><code>	sudo gpasswd -a your_user_name lp
+</code></pre><h3 id="pairing">Pairing</h3>
+<p>To pair your headset, the exact procedure will depend on the specific device. In general, however, you can follow these steps:</p>
+<p>Enter the <code>bluetoothctl</code> command to enter the prompt:</p>
+<pre tabindex="0"><code>	bluetoothctl
+	[bluetooth]#
+</code></pre><p>Turn on Bluetooth and start scanning for devices:</p>
+<pre tabindex="0"><code>	[bluetooth]# power on
+	[bluetooth]# scan on
+</code></pre><p>Pair and connect to your headset:</p>
+<pre tabindex="0"><code>	[NEW] Device 00:11:22:33:44:FF Amazing BT42
+	[bluetooth]# pair 00:11:22:33:44:FF
+	[bluetooth]# connect 00:11:22:33:44:FF
+	[bluetooth]# exit
+</code></pre><p>If there is a problem, you can try the following steps:</p>
+<pre tabindex="0"><code>	pulseaudio -k
+	bluetoothctl
+	[bluetooth]# connect 00:11:22:33:44:FF
+	[bluetooth]# trust 00:11:22:33:44:FF
+</code></pre><h3 id="setting-default-device">Setting Default Device</h3>
+<p>Now that your headset is paired, you can set it as the default device in Pulseaudio. This can be done using either a graphical interface or the <code>pactl</code> command.</p>
+<p>To use the <code>pactl</code> command, you will first need to list all devices and filter out those that are sink or output devices:</p>
+<pre tabindex="0"><code>pactl list short | grep -e sink -e output
+</code></pre><p>Look for the device that has &ldquo;bluez_sink&rdquo; or &ldquo;bluez_output&rdquo; and copy the symbolic name, starting with &ldquo;bluez&rdquo; and ending with &ldquo;sink&rdquo;.</p>
+<p>Next, we will create a script to connect to the headphones and set them as the default output. Create the <code>connect_headphones</code> script in the  <code>~/.local/bin</code> folder:</p>
+<pre tabindex="0"><code>	#!/bin/sh
+
+	#Headphones MAC address
+	hp_mac=&#34;00:11:22:33:44:FF&#34;
+	#Headphones sink symbolic name
+	hp_sink=&#34;bluez_sink.00_11_22_33_44_FF.a2dp_sink&#34;
+
+	bluetoothctl power on
+	bluetoothctl connect $hp_mac
+	#sleep 3 is optional
+	sleep 3
+	pactl set-default-sink $hp_sink
+</code></pre><p>Replace the MAC address and symbolic name with those of your headphones. The <code>sleep 3</code> 3 second delay is the minimal delay needed on my system to connect my headphones. You may or may not need it.</p>
+<p>Make the script executable:</p>
+<pre tabindex="0"><code>chmod +x connect_headphones
+</code></pre><p>You can now run the script using <code>dmenu</code> or create a launcher and put it in your panel (e.g., for Xfce4).</p>
+<p><img src="/img/connect-headphones-script-xfce4-panel.png" alt="Connect Headphones Using Xfce4 Panel Bluetooth Icon" title="Connect Headphones Using Xfce4 Panel Bluetooth Icon"></p>
+<p>That&rsquo;s it! With these simple steps, you should now have a working Bluetooth audio setup on your Arch Linux system.</p>
+<h3 id="references">References</h3>
+<p><a href="https://wiki.archlinux.org/title/bluetooth_headset">https://wiki.archlinux.org/title/bluetooth_headset</a>
+<a href="https://www.youtube.com/watch?v=Jhzqm8JKekk">https://www.youtube.com/watch?v=Jhzqm8JKekk</a></p>
+
+
+                </div>
+                    <aside class="col-md-3 tikva-sidebar">
+  
+
+
+    
+
+        <div class="col">
+    
+<!--    <p class="mb-0">pic</p> -->
+
+
+</div>
+
+
+    
+
+        <div class="col">
+    <p>Hi, I&rsquo;m Nikita!</p>
+<p>I&rsquo;m aspiring web developer. I started this blog as a way to share my thoughts and experiences on web development.</p>
+<p>When I&rsquo;m not blogging, you can find me on discord. I&rsquo;m also a big fan of graphic arts and design.</p>
+<p>Thanks for visiting my blog! I hope you find something here that you enjoy. Feel free to drop me a message and say hello..</p>
+
+</div>
+
+
+    
+
+</aside>
+</div>
+        </div>
+    </div>
+
+    
+        <div class="footer-container" style="">
+    <div class="container">
+        <footer>
+
+            <div class="row">
+            
+            
+                
+                    <div class="col">
+    <!-- raw HTML omitted -->
+
+</div>
+                
+                    <div class="col">
+    <!-- raw HTML omitted -->
+
+</div>
+                
+                    <div class="col">
+    <p>You can find me on Discord.
+<!-- raw HTML omitted -->
+<a href="https://discordapp.com/users/1067151777578889237">Discord</a></p>
+
+</div>
+                
+            
+
+            </div>
+        </footer>
+    </div>
+</div>
+    
+    
+        
+<div class="subfooter-container">
+
+    <div class="container">
+        <div class="footer">
+            <div class="row wrapper padding">
+                <div class="col-xs-12 col-md-12">
+
+            
+            
+                
+                        <p>Powered by <a href="https://gohugo.io">Hugo</a>. Theme <a href="https://github.com/geschke/hugo-tikva">Tikva</a> by <a href="https://www.kuerbis.org">Ralf Geschke</a>. © 2023 Nikita Kretov.</p>
+
+
+                
+            
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <div id="media-width-detection-element"></div>
+
+<script src="https://nikitakretov.github.iojs/popper.min.js"></script>
+<script src="https://nikitakretov.github.iojs/bootstrap.min.js"></script>
+
+
+</body>
+</html>

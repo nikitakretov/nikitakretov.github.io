@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Nikita&#39;s blog</title>
+    <link>https://nikitakretov.github.io/posts/</link>
+    <description>Recent content in Blog on Nikita&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nikitakretov.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Multiple GitHub Accounts on the Same Login</title>
+      <link>https://nikitakretov.github.io/posts/post05/</link>
+      <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nikitakretov.github.io/posts/post05/</guid>
+      <description>If you want to use multiple GitHub accounts, for example, one for your work and one for your hobby projects, you can do so on the same login account. Here&amp;rsquo;s a step-by-step guide on how to set this up.
+Step 1: Generate Separate SSH Keys To keep your work and hobby accounts separate, you need to have separate SSH keys for each of them. You can generate these keys using the ssh-keygen tool.</description>
+    </item>
+    
+    <item>
+      <title>Using SSH to Connect to Remote Servers</title>
+      <link>https://nikitakretov.github.io/posts/post04/</link>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nikitakretov.github.io/posts/post04/</guid>
+      <description>SSH (Secure Shell) is a network protocol that provides secure, encrypted communication between two untrusted hosts over an insecure network. It&amp;rsquo;s commonly used for logging into remote servers, executing commands, transferring files securely, and setting up virtual private networks (VPNs). SSH provides a secure alternative to traditional Telnet and FTP protocols.
+Installation To install openssh, run the following command:
+sudo pacman -Syu openssh To use openssh as a client and connect to a server, run:</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux Bluetooth Audio Setup Guide</title>
+      <link>https://nikitakretov.github.io/posts/post03/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nikitakretov.github.io/posts/post03/</guid>
+      <description>In this blog post, I&amp;rsquo;ll show you how to set up Bluetooth audio on Arch Linux. We will be using bluez for handling Bluetooth and pulseaudio for handling audio. The bluez and bluez-utils packages provide the Bluetooth protocol stack and control utilities, respectively. The pulseaudio-bluetooth package provides Bluetooth support for the pulseaudio sound server, which should already be installed on your computer.
+Installing Required Packages To get started, we will need to install bluez, bluez-utils and pulseaudio-bluetooth packages.</description>
+    </item>
+    
+    <item>
+      <title>Setting up Japanese Input Method on Arch Linux with X11 and Xfce4</title>
+      <link>https://nikitakretov.github.io/posts/post02/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nikitakretov.github.io/posts/post02/</guid>
+      <description>If you&amp;rsquo;re an Arch Linux user and you need to input Japanese characters, this post will guide you through the setup process. I&amp;rsquo;ll be using X11 and Xfce4 in this tutorial, and I&amp;rsquo;ll be using Fcitx5 and Mozc as the input framework and Japanese Input Method Editor(IME), respectively.
+Prerequisites Before we get started, make sure that you&amp;rsquo;ve uncommented the following locales in /etc/locale.gen:
+en_US.UTF-8 ja_JP.UTF-8 And don&amp;rsquo;t forget to run locale-gen afterwards.</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://nikitakretov.github.io/posts/my-first-post/</link>
+      <pubDate>Sun, 01 Jan 2023 12:00:00 +0000</pubDate>
+      
+      <guid>https://nikitakretov.github.io/posts/my-first-post/</guid>
+      <description>Hello and welcome to my new blog! I&amp;rsquo;m so excited to finally be starting this journey, and I hope you&amp;rsquo;ll join me along the way.
+For those who don&amp;rsquo;t know me, I&amp;rsquo;m Nikita, an aspiring web developer. I started this blog as a way to share my thoughts and experiences on web development. Whether you&amp;rsquo;re a fellow enthusiast or just curious, I hope you&amp;rsquo;ll find something here that interests you.</description>
+    </item>
+    
+  </channel>
+</rss>
