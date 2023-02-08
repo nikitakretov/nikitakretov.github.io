@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SCP on Nikita&#39;s blog</title>
-    <link>https://nikitakretov.github.io/tags/scp/</link>
+    <link>/tags/scp/</link>
     <description>Recent content in SCP on Nikita&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nikitakretov.github.io/tags/scp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/scp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using SSH to Connect to Remote Servers</title>
-      <link>https://nikitakretov.github.io/posts/post04/</link>
+      <link>/posts/post04/</link>
       <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nikitakretov.github.io/posts/post04/</guid>
+      <guid>/posts/post04/</guid>
       <description>SSH (Secure Shell) is a network protocol that provides secure, encrypted communication between two untrusted hosts over an insecure network. It&amp;rsquo;s commonly used for logging into remote servers, executing commands, transferring files securely, and setting up virtual private networks (VPNs). SSH provides a secure alternative to traditional Telnet and FTP protocols.
 Installation To install openssh, run the following command:
 sudo pacman -Syu openssh To use openssh as a client and connect to a server, run:</description>

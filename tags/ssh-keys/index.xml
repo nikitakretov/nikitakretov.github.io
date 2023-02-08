@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SSH keys on Nikita&#39;s blog</title>
-    <link>https://nikitakretov.github.io/tags/ssh-keys/</link>
+    <link>/tags/ssh-keys/</link>
     <description>Recent content in SSH keys on Nikita&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nikitakretov.github.io/tags/ssh-keys/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/ssh-keys/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Multiple GitHub Accounts on the Same Login</title>
-      <link>https://nikitakretov.github.io/posts/post05/</link>
+      <link>/posts/post05/</link>
       <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nikitakretov.github.io/posts/post05/</guid>
+      <guid>/posts/post05/</guid>
       <description>If you want to use multiple GitHub accounts, for example, one for your work and one for your hobby projects, you can do so on the same login account. Here&amp;rsquo;s a step-by-step guide on how to set this up.
 Step 1: Generate Separate SSH Keys To keep your work and hobby accounts separate, you need to have separate SSH keys for each of them. You can generate these keys using the ssh-keygen tool.</description>
     </item>
     
     <item>
       <title>Using SSH to Connect to Remote Servers</title>
-      <link>https://nikitakretov.github.io/posts/post04/</link>
+      <link>/posts/post04/</link>
       <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://nikitakretov.github.io/posts/post04/</guid>
+      <guid>/posts/post04/</guid>
       <description>SSH (Secure Shell) is a network protocol that provides secure, encrypted communication between two untrusted hosts over an insecure network. It&amp;rsquo;s commonly used for logging into remote servers, executing commands, transferring files securely, and setting up virtual private networks (VPNs). SSH provides a secure alternative to traditional Telnet and FTP protocols.
 Installation To install openssh, run the following command:
 sudo pacman -Syu openssh To use openssh as a client and connect to a server, run:</description>

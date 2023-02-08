@@ -2,106 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nikitakretov.github.io/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2023-01-05T12:26:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2023-01-05T12:21:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/arch-linux/</loc>
+    <loc>/tags/arch-linux/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/git/</loc>
+    <loc>/tags/git/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/github/</loc>
+    <loc>/tags/github/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/ssh-agent/</loc>
+    <loc>/tags/ssh-agent/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/ssh-keys/</loc>
+    <loc>/tags/ssh-keys/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/posts/post05/</loc>
+    <loc>/posts/post05/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/remote-login/</loc>
+    <loc>/tags/remote-login/</loc>
     <lastmod>2023-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/scp/</loc>
+    <loc>/tags/scp/</loc>
     <lastmod>2023-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/ssh/</loc>
+    <loc>/tags/ssh/</loc>
     <lastmod>2023-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/posts/post04/</loc>
+    <loc>/posts/post04/</loc>
     <lastmod>2023-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/posts/post03/</loc>
+    <loc>/posts/post03/</loc>
     <lastmod>2023-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/bluetooth/</loc>
+    <loc>/tags/bluetooth/</loc>
     <lastmod>2023-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/bluez/</loc>
+    <loc>/tags/bluez/</loc>
     <lastmod>2023-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/headphones/</loc>
+    <loc>/tags/headphones/</loc>
     <lastmod>2023-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/pulseaudio/</loc>
+    <loc>/tags/pulseaudio/</loc>
     <lastmod>2023-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/fcitx5/</loc>
+    <loc>/tags/fcitx5/</loc>
     <lastmod>2023-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/japanese/</loc>
+    <loc>/tags/japanese/</loc>
     <lastmod>2023-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/mozc/</loc>
+    <loc>/tags/mozc/</loc>
     <lastmod>2023-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/posts/post02/</loc>
+    <loc>/posts/post02/</loc>
     <lastmod>2023-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/st/</loc>
+    <loc>/tags/st/</loc>
     <lastmod>2023-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/x11/</loc>
+    <loc>/tags/x11/</loc>
     <lastmod>2023-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/xfce4/</loc>
+    <loc>/tags/xfce4/</loc>
     <lastmod>2023-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/blog/</loc>
+    <loc>/tags/blog/</loc>
     <lastmod>2023-01-01T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/first-post/</loc>
+    <loc>/tags/first-post/</loc>
     <lastmod>2023-01-01T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/posts/my-first-post/</loc>
+    <loc>/posts/my-first-post/</loc>
     <lastmod>2023-01-01T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/post/</loc>
+    <loc>/tags/post/</loc>
     <lastmod>2023-01-01T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/tags/text/</loc>
+    <loc>/tags/text/</loc>
     <lastmod>2023-01-01T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/feedback/</loc>
+    <loc>/feedback/</loc>
     <lastmod>2018-11-04T21:52:00+01:00</lastmod>
   </url><url>
-    <loc>https://nikitakretov.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://nikitakretov.github.io/sections/</loc>
+    <loc>/sections/</loc>
   </url><url>
-    <loc>https://nikitakretov.github.io/series/</loc>
+    <loc>/series/</loc>
   </url>
 </urlset>
