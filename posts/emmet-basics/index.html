@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <title>Emmet Basics | Nikita&#39;s blog</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta name="author" content="Nikita">
+    <meta name="dc.copyright" content="Kretov">
+    <meta name="description" content="AI generated Arch Linux and web dev content">
+    <meta name="keywords" content="web dev, arch linux, blog">
+
+    
+    <link href="../../css/bootswatch/darkly.min.css" rel="stylesheet">
+    
+    <link href="../../css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../css/custom.css" rel="stylesheet">
+
+
+
+<script type="text/javascript">
+    var azbalacSettingHeaderMoveTitle = 'false';
+</script>
+<script src="../../js/jquery-3.4.1.min.js"></script>
+<script src="../../js/functions.js"></script><style>body {}.footer-container { background-color: #29281f; }.footer-container { color: #f9fcf9; }</style>
+
+
+
+<link id="typography-header-title-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo%3A800"><style id="typography-title" type="text/css">#site-header-text a {
+        font-family: Exo;
+    }#site-header-text a {
+        font-size: 50px; 
+    }</style>
+
+<link id="typography-header-subtitle-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo%3A600"><style id="typography-subtitle" type="text/css">#site-description {
+        font-family: Exo;
+    }#site-description {
+        font-size: 30px; 
+    }</style>
+
+<style id="typography-body" type="text/css"></style>
+
+<style id="typography-navbar" type="text/css">nav#navbarMain {
+        font-size: 20px; 
+    }
+    nav#navbarMain ul.dropdown-menu {
+        font-size: 20px;
+    }</style>
+
+<link id="typography-headline-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"><style id="typography-headline" type="text/css">h1, h2, h3, h4, h5, h6 {
+                font-family: Open Sans; 
+            }</style>
+
+
+
+    
+    <script type="text/javascript">
+        var azbalacSettingHeaderColor = { 'bg': '#000000',
+            'transp': '0'
+            };
+
+    </script>
+    <style type="text/css">
+        #site-header-text a, #site-description {
+                background: "#000000";  
+            background:  rgba(0,0,0,0.00);
+            
+        }
+    </style>
+    
+    
+    <style type="text/css">
+        #site-header-box-title {
+            margin-bottom: 0px;
+        }
+    </style>
+    
+    
+    <style type="text/css">
+        #site-header-container-overlay {
+        
+            left: 20px;
+        
+        
+            top: 20px;
+        
+        }
+    </style>
+    
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+        <script src="//cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+
+<body>
+
+<div id="header" role="banner" style="">
+
+    <div class="container">
+        <header class="masthead">
+            <div>
+                <div id="site-header-container-above" class="row align-items-center">
+                    
+                </div>
+            </div>
+
+
+            
+
+            <div id="site-header-above"><a href="../../" rel="home">
+                <picture>
+                        <source media="(min-width: 1200px)" srcset="../../img/header_bg_example.jpg 1110w">
+                        <source media="(min-width: 992px) and (max-width: 1199.98px)" srcset="../../img/header_bg_example.jpg 930w">
+                        <source media="(min-width: 768px) and (max-width: 991.98px)" srcset="../../img/header_bg_example.jpg 690w">
+                        <source media="(min-width: 576px) and (max-width: 767.98px)" srcset="../../img/header_bg_example.jpg 510w">
+                        <source media="(max-width: 575.98px)" srcset="../../img/header_bg_example.jpg 476w">
+                        <img id="site-header-image" src="../../img/header_bg_example.jpg" style="max-width: 100%; width: 100%">
+                </picture>
+                </a>
+
+                <div id="site-header-container-overlay" class="position-absolute  fixed-top ">
+                    <div id="site-header-box-title" class=" d-flex justify-content-start ">
+                        <h1 class="azbalac-title" id="site-header-text"><a class="header-url" style="color: #ffffff;" href="../../">Nikita&#39;s blog</a></h1>
+                    </div>
+                    
+                    <div id="site-header-box-subtitle" class=" d-flex justify-content-start ">   
+                        <h2 class="azbalac-subtitle" id="site-description" style="color: #F39C12;">AI generated</h2>
+                    </div>
+                </div>
+                
+             
+            </div>
+
+    
+    <nav id="navbarMain" class="navbar navbar-expand-sm justify-content-between mb-3 navbar-dark bg-primary" role="navigation">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+      
+            
+            <div class="sticky-top navbar-collapse collapse  " id="navbarSupportedContent"> 
+                <ul class="navbar-nav">
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="../../">
+      
+      Home
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="../../posts/">
+      
+      Blog
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="../../about/">
+      
+      About
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+</ul>
+             
+            </div>
+        
+            
+    </nav> 
+    
+
+
+
+      </header>
+    </div> 
+</div>
+
+
+    <div id="main">
+        <div class="container">
+            <div class="row"><div class="col-md" id="content">
+
+
+
+
+
+<h1>Emmet Basics</h1>
+
+    <div class="post-meta"><span class="byline-icon fa fa-clock-o" aria-hidden="true"></span> <span class="screen-reader-text">Date: </span><time datetime="2023-02-14T13:46:53&#43;06:00">14.02.2023</time> - 
+    <span class="byline-icon fa fa-user" aria-hidden="true"></span><span class="screen-reader-text">Author: </span> Nikita
+     </div>
+
+
+  
+<figure class="center-image">
+    <img src="../../img/emmet_ai_overlord_cyborg_anime_girl.png" alt="Emmet AI Overlord Cyborg Anime Girl"  height="300">
+    
+</figure>
+
+<p>My AI overlords asked to me to come up with another blog post. This time it is going to be about Emmet, a tool that was created by web developers to drastically speed up web development process.</p>
+<p>The initial idea of Emmet, was conceived by Vadim Makeev in 2009, dubbed Zen Coding, and actively developed by Sergey Chikuyonok ever since. The idea was that we have frameworks for JavaScript, that allow us to speed up JavaScript development, but we didn&rsquo;t have such tools for HTML and CSS. So out of those ideas Zen Coding and later Emmet was born.</p>
+<p>Emmet uses abbreviations and code snippets in CSS-selector like style to expand abbreviations into complex pieces of code. Basically you are writing a shorter representation of longer code, saving time, and making less mistakes.</p>
+<h2 id="using-emmet-for-html">Using Emmet for HTML</h2>
+<p>The main reason why Emmet was created is to help front-end developers write HTML more efficiently and accurately. HTML is where Emmet&rsquo;s capabilities truly shine. This section will demonstrate how Emmet can be used to write abbreviated code that expands into complete HTML structures, with elements, attributes, content, and more, making the development process faster and more streamlined.</p>
+<h3 id="initializers">Initializers</h3>
+<p>Emmet has initializers that can help you jumpstart your HTML development with boilerplate code. For example, you can type <code>!</code> or <code>html:5</code>, and press <kbd>Tab</kbd>
+ or <kbd>Enter</kbd>
+ to generate an HTML5 boilerplate code.</p>
+<p>You can also use your mouse to expand the abbreviation by clicking on the Emmet Suggestions dropdown menu. Once expanded, the boilerplate code will contain highlighted text, indicating areas where you can add your own data. Pressing <kbd>Tab</kbd>
+ will cycle through these areas, allowing you to quickly fill them in.</p>
+<h3 id="adding-ids-and-class-attributes">Adding IDs and class attributes</h3>
+<p>Classes and identifiers (IDs) are used to group and identify elements in HTML and CSS. Emmet allows you to easily add classes and identifiers with a few keystrokes. To add a class or ID to an HTML element with Emmet you use CSS like syntax.</p>
+<p>To add a <code>class</code> attribute, use a <code>.</code> followed by the desired class name(s) after the element name. You can specify multiple class names by separating them with a <code>.</code>, like this: <code>div.my-class1.my-class2</code>.</p>
+<p>To add an <code>id</code> attribute, simply type a <code>#</code> followed by the desired ID value after the element name. For example, to create a <code>div</code> element with an <code>id</code> of <code>myDiv</code>, you can type <code>div#myDiv</code> and hit <kbd>Tab</kbd>
+ or <kbd>Enter</kbd>
+ to expand the abbreviation.</p>
+<p>You can combine classes and IDs using the same syntax as before. Simply add the <code>#</code> and <code>.</code>, followed by the desired ID and class names respectively. For example, <code>p#foo.bar</code> will generate an HTML paragraph with an <code>id</code> of <code>foo</code> and a class of <code>bar</code>. Similarly, you can specify multiple classes and an ID in the same element, like <code>div#myDiv.my-class1.my-class2</code>. When you use this abbreviation, it will create a <code>div</code> element with an <code>id</code> of <code>myDiv</code> and two class attributes, one with a class name of <code>my-class1</code> and the other with <code>my-class2</code>.</p>
+<h3 id="defining-content-and-attributes-for-html-elements">Defining Content and Attributes for HTML Elements</h3>
+<p>Emmet lets you easily define content and attributes for HTML elements using special syntax.</p>
+<p>To define content, enclose it in curly braces (<code>{}</code>) right after the element name. For example, to create an <code>h1</code> element with the content &ldquo;foo&rdquo;, you can type <code>h1{foo}</code> and hit <kbd>Tab</kbd>
+ or <kbd>Enter</kbd>
+ to expand the abbreviation. This will produce the following HTML code:</p>
+<pre tabindex="0"><code>    &lt;h1&gt;foo&lt;/h1&gt;
+</code></pre><p>To define attributes, enclose them in square brackets (<code>[]</code>) after the element name. For example, to create an a element with a <code>href</code> attribute set to <code>#</code>, you can type <code>a[href=#]</code> and hit <kbd>Tab</kbd>
+ or <kbd>Enter</kbd>
+ to expand the abbreviation. This will generate the following HTML code:</p>
+<pre tabindex="0"><code>    &lt;a href=&#34;#&#34;&gt;&lt;/a&gt;
+</code></pre><h3 id="nesting">Nesting</h3>
+<p>Nesting elements is an essential part of writing HTML, and Emmet makes it easy to create nested elements with a few keystrokes. To nest elements, use the child operator, represented by <code>&gt;</code>, to specify the relationship between parent and child elements. In addition to the child operator, you can also use the sibling operator, represented by <code>+</code>, to place elements next to each other on the same level. For example, to create two paragraphs belonging to the same parent <code>div</code>, you can use the abbreviation <code>div&gt;p+p</code>. This will produce the following HTML:</p>
+<pre tabindex="0"><code>    &lt;div&gt;
+      &lt;p&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;/p&gt;
+    &lt;/div&gt;
+</code></pre><p>To put more children inside the parent element you can also use multiplication operator,  represented by <code>*</code>. This will create multiple copies of the same child element. For example, to create a <code>ul</code> element with three nested <code>li</code> elements, you can use this abbreviation: <code>ul&gt;li*2</code>. This will produce the following HTML:</p>
+<pre tabindex="0"><code>    &lt;ul&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+</code></pre><p>In addition to that, you can use the climb up operator, represented by <code>^</code>, to move up one level in the HTML tree. For example, to create an <code>a</code> element inside a <code>li</code> element, but with a sibling relationship to the <code>ul</code> element, you can use the abbreviation <code>ul&gt;li^a</code>. This will produce the following HTML:</p>
+<pre tabindex="0"><code>    &lt;ul&gt;
+        &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a&gt;&lt;/a&gt;
+</code></pre><h3 id="grouping">Grouping</h3>
+<p>In Emmet, grouping is used to organize and group pieces of code so they can be nested and expanded properly. The grouping syntax uses parentheses <code>()</code> to encapsulate and group elements together. Similar to mathematical expressions, grouping with parentheses in Emmet can help to prioritize or segregate certain expressions over others.</p>
+<p>To use grouping, simply wrap the expressions that you want to group with parentheses. For example, the expression <code>(.foo&gt;h1)+(.bar&gt;h2)</code> groups two sets of expressions, which are <code>(.foo&gt;h1)</code> and <code>(.bar&gt;h2)</code> respectively. When expanded, the abbreviation will generate two sets of HTML code, one for each group:</p>
+<pre tabindex="0"><code>    &lt;div class=&#34;foo&#34;&gt;
+      &lt;h1&gt;&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;bar&#34;&gt;
+      &lt;h2&gt;&lt;/h2&gt;
+    &lt;/div&gt;
+</code></pre><h3 id="implicit-tag-names">Implicit Tag Names</h3>
+<p>When you use Emmet to create a new element with a class, you can omit the tag name and use only the class name. For example, typing <code>.item</code> will produce <code>&lt;div class=&quot;item&quot;&gt;&lt;/div&gt;</code>.</p>
+<p>Emmet uses the parent tag name to determine the implicit tag name to use when expanding the abbreviation. For instance, if you use <code>.item</code> inside a <code>&lt;ul&gt;</code> element, Emmet will create a new list item with a class, like this: <code>&lt;li class=&quot;item&quot;&gt;&lt;/li&gt;</code>.</p>
+<p>Emmet provides a few implicit tag names to help you write HTML faster. Here is a list of implicit tag names and the parent elements they apply to:</p>
+<ul>
+<li><code>li</code> for <code>ul</code> and <code>ol</code> elements</li>
+<li><code>tr</code> for table, <code>tbody</code>, <code>thead</code>, and <code>tfoot</code> elements</li>
+<li><code>td</code> for <code>tr</code> elements</li>
+<li><code>option</code> for <code>select</code> and <code>optgroup</code> elements</li>
+</ul>
+<p>With implicit tag names, you can write more concise and readable code.</p>
+<h3 id="numbering">Numbering</h3>
+<p>With Emmet, you can mix the multiplication feature with item numbering to create a list of numbered items. Simply place the <code>$</code> operator in the element&rsquo;s name, the attribute&rsquo;s name or the attribute&rsquo;s value to output the number of currently repeated elements.</p>
+<p>For example, if you type <code>ul&gt;li.item$*3</code>, it will output the following HTML code:</p>
+<pre tabindex="0"><code>    &lt;ul&gt;
+      &lt;li class=&#34;item1&#34;&gt;&lt;/li&gt;
+      &lt;li class=&#34;item2&#34;&gt;&lt;/li&gt;
+      &lt;li class=&#34;item3&#34;&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+</code></pre><p>This code creates an unordered list (<code>ul</code>) with three list items (<code>li</code>) that have the class item followed by the corresponding number. The <code>$</code> operator automatically increments the number for each repeated item. You can also use more than one <code>$</code> operator to create complex numbering patterns. For example, if you write <code>ul&gt;li.item$$$*3</code>, it will output:</p>
+<pre tabindex="0"><code>    &lt;ul&gt;
+      &lt;li class=&#34;item001&#34;&gt;&lt;/li&gt;
+      &lt;li class=&#34;item002&#34;&gt;&lt;/li&gt;
+      &lt;li class=&#34;item003&#34;&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+</code></pre><p>In this example, the first <code>$</code> operator outputs the current item number, but with three digits (<code>001</code>, <code>002</code>, <code>003</code>, etc.), because there are three <code>$</code> symbols used. This can be useful for creating numbered lists with a specific formatting pattern.</p>
+<h2 id="using-emmet-for-css">Using Emmet for CSS</h2>
+<p>While Emmet&rsquo;s abbreviations are primarily designed for HTML and other structured markup, they can also be used to create shorthands for CSS properties. Instead of manually typing out long CSS property names, Emmet lets you use predefined snippets that expand to the full property name.</p>
+<p>For example, you can use the m abbreviation to expand to margin. However, you don&rsquo;t want to just output the property name - you can also specify a value for it. You can inject a value directly into the abbreviation, like <code>m10</code> for <code>margin: 10px;</code>.</p>
+<p>Emmet also supports injecting multiple values into a single abbreviation, which is very useful for properties that have multiple values. For example, <code>m10-20</code> expands to <code>margin: 10px 20px;</code>. You can also use negative values by preceding the first value with a hyphen and the rest with double hyphens. For example, <code>m-10--20</code> expands to <code>margin: -10px -20px;</code>.</p>
+<p>Emmet can also automatically add units to the values you provide. If you enter an integer value, it will add a <code>px</code> unit by default. For example, <code>m20</code> expands to <code>margin: 20px;</code>. If you enter a float value, it will add an <code>em</code> unit by default. For example, <code>m1.5</code> expands to <code>margin: 1.5em;</code>. If you want to specify a different unit, just add letters right after the value. For example, <code>m1.5ex</code> expands to <code>margin: 1.5ex;</code>.</p>
+<p>Emmet also has a few aliases for commonly used values. For example, <code>p</code> stands for <code>%</code>, <code>e</code> stands for <code>em</code>, and <code>x</code> stands for <code>ex</code>. You can use these aliases instead of the full unit names. For example, <code>w100p</code> expands to <code>width: 100%;</code> and <code>m10p30e5x</code> expands to <code>margin: 10% 30em 5ex;</code>.</p>
+<p>For properties that have extra options, such as <code>background-image</code>, <code>border-radius</code>, <code>font</code>, <code>@font-face</code>, <code>text-outline</code>, and <code>text-shadow</code>, you can use the <code>+</code> sign to activate these options. For example, <code>@f+</code> expands to an <code>@font-face</code> rule with more options.</p>
+<p>Emmet also has a fuzzy search feature that makes it easier to find the abbreviation you need. If you enter an unknown abbreviation, Emmet will try to find the closest matching snippet definition. For example, <code>ov:h</code>, <code>ov-h</code>, <code>ovh</code>, and <code>oh</code> will all expand to <code>overflow: hidden;</code>.</p>
+<p>Finally, Emmet can generate vendor prefixes for CSS3 properties, which can be a real time-saver. For example, the <code>trs</code> abbreviation will expand to <code>-webkit-transform: ;</code> <code>-moz-transform: ;</code> <code>-ms-transform: ;</code> <code>-o-transform: ;</code> <code>transform: ;</code>. You can also define exactly which browser prefixes you want to include, such as <code>-wm-trf</code> for <code>-webkit-transform: ;</code> <code>-moz-transform: ;</code> <code>transform: ;</code>.</p>
+<h3 id="combining-css-abbreviations">Combining CSS abbreviations</h3>
+<p>By combining abbreviations, you can create complex styles with minimal typing.</p>
+<p>For example, the abbreviation <code>fz.675r+1h1.45+p2e+m1r+df+fxd:c+bgc:violet+c:#fff</code> will generate the following CSS code:</p>
+<pre tabindex="0"><code>    font-size: .675rem;
+    line-height: 1.45;
+    padding: 2em;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: violet;
+</code></pre><p>Here is how it works.</p>
+<p>Each abbreviation starts with a property name, such as <code>fz</code> for <code>font-size</code> or <code>p</code> for padding. You can then add values to the abbreviation by using <code>.</code> separator and add additional properties using <code>+</code> separator. The <code>:</code> separator can also be used to specify the property value.</p>
+<p>You can use different units for different properties. For example, <code>p2e</code> expands to <code>padding: 2em;</code>, while <code>fz.675r</code> expands to <code>font-size: .675rem;</code>.</p>
+<p>Here are some more examples:</p>
+<ul>
+<li><code>m1</code> expands to <code>margin: 1px;</code></li>
+<li><code>p1e</code> expands to <code>padding: 1em;</code></li>
+<li><code>w100p+h100p</code> expands to <code>width: 100%; height: 100%;</code></li>
+<li><code>fxd:c+jc:c+ai:c</code> expands to <code>display: flex; justify-content: center; align-items: center;</code></li>
+<li><code>bgc:#f00+c:#fff</code> expands to <code>background-color: #f00; color: #fff;</code></li>
+</ul>
+<p>When you expand an abbreviation like <code>bgc+c++df+fxd</code> without specifying the values, Emmet will automatically place the cursor at the first property that doesn&rsquo;t have a value assigned, once the abbreviation is expanded.</p>
+<p>You can combine as many abbreviations as you need to create complex styles. Just remember to use the <code>.</code> and <code>:</code> separators to add values, <code>+</code> to add additional properties, and use the appropriate units for each property.</p>
+<h3 id="gradients">Gradients</h3>
+<p>Emmet has built-in support for creating CSS gradients, but the autocomplete functionality for gradient functions in VS Code&rsquo;s implementation of Emmet is currently limited. Several related issues on GitHub (such as <a href="https://github.com/microsoft/vscode/issues/79439">https://github.com/microsoft/vscode/issues/79439</a> and <a href="https://github.com/Microsoft/vscode/issues/605">https://github.com/Microsoft/vscode/issues/605</a>) are still unresolved. However, you can supplement Emmet&rsquo;s limited autocomplete by using one of the many VS Code extensions that provide visual interfaces for generating CSS gradients. For example, extensions like &lsquo;Gradient Generator&rsquo;, &lsquo;CSS Gradient Generator&rsquo;, and &lsquo;CSS Gradient&rsquo; can all help you create and customize gradients without needing to remember the exact syntax. These extensions typically provide a graphical interface for specifying gradient type, direction, and color stops, and generate the necessary CSS code for you.</p>
+<h2 id="lorem-ipsum">Lorem Ipsum</h2>
+<p>Emmet comes wit build in Lorem ipsum text generator. You just type lorem and press <kbd>Tab</kbd>
+ or <kbd>Enter</kbd>
+. By default, it generates around 30 words:</p>
+<pre tabindex="0"><code>    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam assumenda voluptatum at temporibus beatae impedit libero natus aperiam sequi deleniti, perferendis repellat, possimus nesciunt ab asperiores atque nostrum molestias nam!
+</code></pre><p>You can also specify how many words you want to generate. For example, lorem 10 will output:</p>
+<pre tabindex="0"><code>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, maxime?
+</code></pre><p>You can also use Lorem in complex Emmet abbreviations. For example ul&gt;li*5&gt;lorem1 will generate unordered list with one word of Lorem per line:</p>
+<pre tabindex="0"><code>    &lt;ul&gt;
+      &lt;li&gt;Lorem.&lt;/li&gt;
+      &lt;li&gt;Sequi!&lt;/li&gt;
+      &lt;li&gt;Ipsum.&lt;/li&gt;
+      &lt;li&gt;Sunt.&lt;/li&gt;
+      &lt;li&gt;Quaerat!&lt;/li&gt;
+    &lt;/ul&gt;
+</code></pre><p>You can even generate a whole page with Lorem and Emmet! Try this and see:</p>
+<pre tabindex="0"><code>    html&gt;(head&gt;title{My Web Page})+(body&gt;(header&gt;h1{Header})+(nav&gt;ul&gt;li*4&gt;a{Menu Item $})+(main&gt;(section&gt;h2{Section Title}+(p&gt;lorem50))*3)+(aside&gt;h3{Sidebar Title}+ul&gt;li*5&gt;a{Link $})+(footer&gt;h4{Footer}+p&gt;lorem15))
+</code></pre><p>Sometimes, in cases like the one above, you may need to manually expand an Emmet abbreviation to generate HTML code. To do this, open the Command Palette by pressing <kbd>Ctrl&#43;Shift&#43;P</kbd>
+, search for the Emmet: Expand Abbreviation command, and select it.  Pressing <kbd>Tab</kbd>
+ or <kbd>Enter</kbd>
+ key may not work if you copy and paste some abbreviations or if you somehow interrupt typing the complex abbreviation.</p>
+<h2 id="wrapping-with-abbreviation">Wrapping with abbreviation</h2>
+<p>Emmet provides a &ldquo;Wrap with Abbreviation&rdquo; command that allows you to quickly wrap an existing piece of code or text with a new HTML tag, specified by an Emmet abbreviation. Here&rsquo;s how to use it:</p>
+<ol>
+<li>
+<p>Select the text or HTML elements that you want to wrap.</p>
+</li>
+<li>
+<p>Open the Command Palette by pressing <kbd>Ctrl&#43;Shift&#43;P</kbd>
+.</p>
+</li>
+<li>
+<p>Type &ldquo;Wrap with Abbreviation&rdquo; in the search bar, and select the corresponding command.</p>
+</li>
+<li>
+<p>Enter the desired tag that you want to use to wrap around the selected text or elements. This can be a standard tag like div, or an abbreviation like .wrapper&gt;p.</p>
+</li>
+<li>
+<p>Press <kbd>Enter</kbd>
+ to apply the wrapping.</p>
+</li>
+</ol>
+<h3 id="adding-wrap-with-abbreviation-shortcut">Adding Wrap with Abbreviation shortcut</h3>
+<p>If you frequently use the &ldquo;Wrap with Abbreviation&rdquo; command, you can speed up the process by creating a keyboard shortcut. To do this, open the Command Palette by pressing <kbd>Ctrl&#43;Shift&#43;P</kbd>
+ and select &ldquo;Open Keyboard Shortcuts (JSON)&rdquo;. Then, add the following JSON object to the file:</p>
+<pre tabindex="0"><code>    {
+        &#34;key&#34;: &#34;alt+w&#34;,
+        &#34;command&#34;: &#34;editor.emmet.action.wrapWithAbbreviation&#34;,
+        &#34;when&#34;: &#34;editorHasSelection &amp;&amp; editorTextFocus&#34;
+    }
+</code></pre><p>This configuration creates a custom keyboard shortcut (in this case, <kbd>alt&#43;w</kbd>
+) that triggers the &ldquo;Wrap with Abbreviation&rdquo; command when the shortcut is pressed. The when condition ensures that the shortcut is only active when there is a text selection and the editor has focus.</p>
+<h3 id="wrapping-around-multiple-lines-of-text">Wrapping around multiple lines of text</h3>
+<p>When using Emmet to wrap around multiple lines of text, you can modify the abbreviation syntax to create repeating elements without specifying the exact number of repetitions. For example, you can use an abbreviation like ul#nav&gt;li*&gt;a to create an unordered list with a series of list items, each with a nested link element. When Emmet encounters an element with an undefined multiplication number, it will use the element as a repeating element and output it as many times as there are lines in your selection. The content of each line is placed inside the deepest child of the repeating element, which in this example is the link element.</p>
+<p>If you want to wrap an abbreviation like div#header&gt;ul#navigation&gt;li.item$*&gt;a&gt;span around a list of items, such as:</p>
+<pre tabindex="0"><code>    About Us
+    Products
+    News
+    Blog
+    Contact Up
+    Copy
+</code></pre><p>You’ll get the following result:</p>
+<pre tabindex="0"><code>    &lt;div id=&#34;header&#34;&gt;
+      &lt;ul id=&#34;navigation&#34;&gt;
+        &lt;li class=&#34;item1&#34;&gt;
+          &lt;a href=&#34;a.html&#34;&gt;
+            &lt;span&gt;About Us&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;item2&#34;&gt;
+          &lt;a href=&#34;p.html&#34;&gt;
+            &lt;span&gt;Products&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;item3&#34;&gt;
+          &lt;a href=&#34;n.html&#34;&gt;
+            &lt;span&gt;News&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;item4&#34;&gt;
+          &lt;a href=&#34;b.html&#34;&gt;
+            &lt;span&gt;Blog&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;item5&#34;&gt;
+          &lt;a href=&#34;c.html&#34;&gt;
+            &lt;span&gt;Contact Up&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&#34;item6&#34;&gt;
+          &lt;a href=&#34;co.html&#34;&gt;
+            &lt;span&gt;Copy&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+</code></pre><p>Overall, using Emmet to wrap around multiple lines of text can be a convenient way to quickly generate HTML structures without having to write out the code manually. By adjusting the abbreviation syntax to match the desired structure, you can create repeating elements and add custom attributes and content to your HTML code with ease.</p>
+<h2 id="creating-javascript-snippet-that-can-be-called-by-using-a-keyboard-shortcut">Creating JavaScript snippet that can be called by using a keyboard shortcut</h2>
+<p>Here we are going to create a JavaScript snippet that will wrap the selected text in console.log method with some bells and whistles attached.</p>
+<p>First we will add JavaScript Emmet snippet to the javascript.json file. Open the Command Palette by pressing <kbd>Ctrl&#43;Shift&#43;P</kbd>
+, type Snippets, select Snippets: Configure User Snippets, then select JavaScript (either create new javascript.json file or use the existing if available) and add the following:</p>
+<pre tabindex="0"><code>    }
+      &#34;console.log&#34;: {
+        &#34;prefix&#34;: &#34;cl&#34;,
+        &#34;body&#34;: [
+          &#34;console.${2|log,table,count,dir,error,info|}(${TM_SELECTED_TEXT:`${1}`});&#34;,
+        ],
+        &#34;description&#34;: &#34;Log output to console&#34;
+      }
+    }
+</code></pre><p>This snippet can be triggered by cl and pressing <kbd>Tab</kbd>
+ or <kbd>Enter</kbd>
+ key. By itself it won&rsquo;t do much, it will output:</p>
+<pre tabindex="0"><code>    console.log(``);
+</code></pre><p>And allow you to select a method call. To make this snippet more useful, we will need to be able to call it using a keyboard shortcut, when we selected a text. To do that we need to add a shortcut similar to the one bellow to the keybindings.json file. Open the Command Palette by pressing <kbd>Ctrl&#43;Shift&#43;P</kbd>
+, type Shortcuts, select Open Keyboard Shortcuts (JSON) and add the following:</p>
+<pre tabindex="0"><code>    {
+        &#34;key&#34;: &#34;ctrl+alt+q&#34;,
+        &#34;command&#34;: &#34;editor.action.insertSnippet&#34;,
+        &#34;when&#34;: &#34;editorTextFocus&#34;,
+        &#34;args&#34;: {
+            &#34;name&#34;: &#34;console.log&#34;
+        }
+    }
+</code></pre><p>This configuration setting creates a custom keyboard shortcut for the code snippet named console.log. The &ldquo;key&rdquo; specifies the keyboard shortcut that triggers the code snippet. The &ldquo;command&rdquo; tells VS Code which command to run when keyboard shortcut is triggered. In this case, it is the &ldquo;Insert Snippet&rdquo; command, which allows you to insert the snippet code that you defined earlier into your selected code. The &ldquo;when&rdquo; part specifies the context in which the keyboard shortcut can be triggered. In this case, the shortcut can only be triggered when the focus is on a text editor, and not on a sidebar or other area of the Visual Studio Code interface. The &ldquo;args&rdquo; part provides additional arguments to the command. Specifically, it specifies the name of the code snippet to be inserted (console.log), which in this case is not a built in snippet but a custom snippet we just made. Instead of &ldquo;name&rdquo; you can also specify &ldquo;prefix&rdquo;.</p>
+<p>Now, if you select some text, like <code>String(234)</code> and press <kbd>Ctrl&#43;Alt&#43;Q</kbd>
+, you should get this:</p>
+<pre tabindex="0"><code>    console.log(String(234));
+</code></pre><p>This snippet inserts a <code>console</code> object with a method call, where the method is chosen from a dropdown list of options (in this case,<code>log</code>, <code>table</code>, <code>count</code>, <code>dir</code>, <code>error</code>, or <code>info</code>) and the text to be logged is taken from the selected text in the editor or from the cursor position (if no text is selected).</p>
+<h2 id="references">References</h2>
+<p><a href="https://docs.emmet.io/">https://docs.emmet.io/</a>
+<a href="https://docs.emmet.io/cheat-sheet/">https://docs.emmet.io/cheat-sheet/</a>
+<a href="https://www.smashingmagazine.com/2013/03/goodbye-zen-coding-hello-emmet/">https://www.smashingmagazine.com/2013/03/goodbye-zen-coding-hello-emmet/</a>
+<a href="https://www.smashingmagazine.com/2021/06/custom-emmet-snippets-vscode/">https://www.smashingmagazine.com/2021/06/custom-emmet-snippets-vscode/</a>
+<a href="https://www.youtube.com/watch?v=vncch9-1kPE">https://www.youtube.com/watch?v=vncch9-1kPE</a></p>
+
+
+                </div>
+                    <aside class="col-md-3 tikva-sidebar">
+  
+
+
+    
+
+        <div class="col">
+    
+<!--    <p class="mb-0">pic</p> -->
+
+
+</div>
+
+
+    
+
+        <div class="col">
+    <p>Hi, I&rsquo;m Nikita!</p>
+<p>I&rsquo;m aspiring web developer. I started this blog as a way to share my thoughts and experiences on web development.</p>
+<p>When I&rsquo;m not blogging, you can find me on discord. I&rsquo;m also a big fan of graphic arts and design.</p>
+<p>Thanks for visiting my blog! I hope you find something here that you enjoy. Feel free to drop me a message and say hello..</p>
+
+</div>
+
+
+    
+
+</aside>
+</div>
+        </div>
+    </div>
+
+    
+        <div class="footer-container" style="">
+    <div class="container">
+        <footer>
+
+            <div class="row">
+            
+            
+                
+                    <div class="col">
+    <!-- raw HTML omitted -->
+
+</div>
+                
+                    <div class="col">
+    <!-- raw HTML omitted -->
+
+</div>
+                
+                    <div class="col">
+    <p>You can find me on Discord.
+<!-- raw HTML omitted -->
+<a href="https://discordapp.com/users/1067151777578889237">Discord</a></p>
+
+</div>
+                
+            
+
+            </div>
+        </footer>
+    </div>
+</div>
+    
+    
+        
+<div class="subfooter-container">
+
+    <div class="container">
+        <div class="footer">
+            <div class="row wrapper padding">
+                <div class="col-xs-12 col-md-12">
+
+            
+            
+                
+                        <p>Powered by <a href="https://gohugo.io">Hugo</a>. Theme <a href="https://github.com/geschke/hugo-tikva">Tikva</a> by <a href="https://www.kuerbis.org">Ralf Geschke</a>. © 2023 Nikita Kretov.</p>
+
+
+                
+            
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <div id="media-width-detection-element"></div>
+
+<script src="../../js/popper.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

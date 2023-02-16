@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/css/</loc>
+    <lastmod>2023-02-14T13:46:53+06:00</lastmod>
+  </url><url>
+    <loc>/tags/emmet/</loc>
+    <lastmod>2023-02-14T13:46:53+06:00</lastmod>
+  </url><url>
+    <loc>/posts/emmet-basics/</loc>
+    <lastmod>2023-02-14T13:46:53+06:00</lastmod>
+  </url><url>
+    <loc>/tags/html/</loc>
+    <lastmod>2023-02-14T13:46:53+06:00</lastmod>
+  </url><url>
+    <loc>/tags/javascript/</loc>
+    <lastmod>2023-02-14T13:46:53+06:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2023-02-14T13:46:53+06:00</lastmod>
+  </url><url>
+    <loc>/tags/vs-code/</loc>
+    <lastmod>2023-02-14T13:46:53+06:00</lastmod>
+  </url><url>
+    <loc>/tags/web-dev/</loc>
+    <lastmod>2023-02-14T13:46:53+06:00</lastmod>
+  </url><url>
     <loc>/about/</loc>
     <lastmod>2023-01-05T12:26:00+00:00</lastmod>
   </url><url>
@@ -24,9 +48,6 @@
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/ssh-keys/</loc>
-    <lastmod>2023-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/post05/</loc>

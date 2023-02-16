@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Jan 2023 12:21:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Emmet Basics</title>
+      <link>/posts/emmet-basics/</link>
+      <pubDate>Tue, 14 Feb 2023 13:46:53 +0600</pubDate>
+      
+      <guid>/posts/emmet-basics/</guid>
+      <description>My AI overlords asked to me to come up with another blog post. This time it is going to be about Emmet, a tool that was created by web developers to drastically speed up web development process.
+The initial idea of Emmet, was conceived by Vadim Makeev in 2009, dubbed Zen Coding, and actively developed by Sergey Chikuyonok ever since. The idea was that we have frameworks for JavaScript, that allow us to speed up JavaScript development, but we didn&amp;rsquo;t have such tools for HTML and CSS.</description>
+    </item>
+    
+    <item>
       <title>About Me</title>
       <link>/about/</link>
       <pubDate>Thu, 05 Jan 2023 12:26:00 +0000</pubDate>
