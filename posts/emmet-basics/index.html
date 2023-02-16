@@ -384,52 +384,52 @@
 </code></pre><p>This configuration creates a custom keyboard shortcut (in this case, <kbd>alt&#43;w</kbd>
 ) that triggers the &ldquo;Wrap with Abbreviation&rdquo; command when the shortcut is pressed. The when condition ensures that the shortcut is only active when there is a text selection and the editor has focus.</p>
 <h3 id="wrapping-around-multiple-lines-of-text">Wrapping around multiple lines of text</h3>
-<p>When using Emmet to wrap around multiple lines of text, you can modify the abbreviation syntax to create repeating elements without specifying the exact number of repetitions. For example, you can use an abbreviation like ul#nav&gt;li*&gt;a to create an unordered list with a series of list items, each with a nested link element. When Emmet encounters an element with an undefined multiplication number, it will use the element as a repeating element and output it as many times as there are lines in your selection. The content of each line is placed inside the deepest child of the repeating element, which in this example is the link element.</p>
-<p>If you want to wrap an abbreviation like div#header&gt;ul#navigation&gt;li.item$*&gt;a&gt;span around a list of items, such as:</p>
-<pre tabindex="0"><code>    About Us
+<p>When using Emmet to wrap around multiple lines of text, you can modify the abbreviation syntax to create repeating elements without specifying the exact number of repetitions. For example, you can use an abbreviation like <code>ul#nav&gt;li*&gt;a</code> to create an unordered list with a series of list items, each with a nested link element. When Emmet encounters an element with an undefined multiplication number, it will use the element as a repeating element and output it as many times as there are lines in your selection. The content of each line is placed inside the deepest child of the repeating element, which in this example is the link element.</p>
+<p>If you want to wrap an abbreviation like <code>div#header&gt;ul#navigation&gt;li.item$*&gt;a&gt;span</code> around a list of items, such as:</p>
+<pre tabindex="0"><code>    Home
     Products
     News
     Blog
-    Contact Up
-    Copy
+    About Us
+    Contacts
 </code></pre><p>You’ll get the following result:</p>
 <pre tabindex="0"><code>    &lt;div id=&#34;header&#34;&gt;
       &lt;ul id=&#34;navigation&#34;&gt;
         &lt;li class=&#34;item1&#34;&gt;
-          &lt;a href=&#34;a.html&#34;&gt;
-            &lt;span&gt;About Us&lt;/span&gt;
+          &lt;a href=&#34;&#34;&gt;
+            &lt;span&gt;Home&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&#34;item2&#34;&gt;
-          &lt;a href=&#34;p.html&#34;&gt;
+          &lt;a href=&#34;&#34;&gt;
             &lt;span&gt;Products&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&#34;item3&#34;&gt;
-          &lt;a href=&#34;n.html&#34;&gt;
+          &lt;a href=&#34;&#34;&gt;
             &lt;span&gt;News&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&#34;item4&#34;&gt;
-          &lt;a href=&#34;b.html&#34;&gt;
+          &lt;a href=&#34;&#34;&gt;
             &lt;span&gt;Blog&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&#34;item5&#34;&gt;
-          &lt;a href=&#34;c.html&#34;&gt;
-            &lt;span&gt;Contact Up&lt;/span&gt;
+          &lt;a href=&#34;&#34;&gt;
+            &lt;span&gt;About Us&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
         &lt;li class=&#34;item6&#34;&gt;
-          &lt;a href=&#34;co.html&#34;&gt;
-            &lt;span&gt;Copy&lt;/span&gt;
+          &lt;a href=&#34;&#34;&gt;
+            &lt;span&gt;Contacts&lt;/span&gt;
           &lt;/a&gt;
         &lt;/li&gt;
       &lt;/ul&gt;
     &lt;/div&gt;
 </code></pre><p>Overall, using Emmet to wrap around multiple lines of text can be a convenient way to quickly generate HTML structures without having to write out the code manually. By adjusting the abbreviation syntax to match the desired structure, you can create repeating elements and add custom attributes and content to your HTML code with ease.</p>
 <h2 id="creating-javascript-snippet-that-can-be-called-by-using-a-keyboard-shortcut">Creating JavaScript snippet that can be called by using a keyboard shortcut</h2>
-<p>Here we are going to create a JavaScript snippet that will wrap the selected text in console.log method with some bells and whistles attached.</p>
+<p>Here we are going to create a JavaScript snippet that will wrap the selected text in <code>console.log</code> method with some bells and whistles attached.</p>
 <p>First we will add JavaScript Emmet snippet to the javascript.json file. Open the Command Palette by pressing <kbd>Ctrl&#43;Shift&#43;P</kbd>
 , type Snippets, select Snippets: Configure User Snippets, then select JavaScript (either create new javascript.json file or use the existing if available) and add the following:</p>
 <pre tabindex="0"><code>    }
@@ -455,7 +455,7 @@
             &#34;name&#34;: &#34;console.log&#34;
         }
     }
-</code></pre><p>This configuration setting creates a custom keyboard shortcut for the code snippet named console.log. The &ldquo;key&rdquo; specifies the keyboard shortcut that triggers the code snippet. The &ldquo;command&rdquo; tells VS Code which command to run when keyboard shortcut is triggered. In this case, it is the &ldquo;Insert Snippet&rdquo; command, which allows you to insert the snippet code that you defined earlier into your selected code. The &ldquo;when&rdquo; part specifies the context in which the keyboard shortcut can be triggered. In this case, the shortcut can only be triggered when the focus is on a text editor, and not on a sidebar or other area of the Visual Studio Code interface. The &ldquo;args&rdquo; part provides additional arguments to the command. Specifically, it specifies the name of the code snippet to be inserted (console.log), which in this case is not a built in snippet but a custom snippet we just made. Instead of &ldquo;name&rdquo; you can also specify &ldquo;prefix&rdquo;.</p>
+</code></pre><p>This configuration setting creates a custom keyboard shortcut for the code snippet named console.log. The <code>key</code> specifies the keyboard shortcut that triggers the code snippet. The <code>command</code> tells VS Code which command to run when keyboard shortcut is triggered. In this case, it is the &ldquo;Insert Snippet&rdquo; command, which allows you to insert the snippet code that you defined earlier into your selected code. The <code>when</code> part specifies the context in which the keyboard shortcut can be triggered. In this case, the shortcut can only be triggered when the focus is on a text editor, and not on a sidebar or other area of the Visual Studio Code interface. The <code>args</code> part provides additional arguments to the command. Specifically, it specifies the name of the code snippet to be inserted (<code>console.log</code>), which in this case is not a built in snippet but a custom snippet we just made. Instead of <code>name</code> you can also specify <code>prefix</code>.</p>
 <p>Now, if you select some text, like <code>String(234)</code> and press <kbd>Ctrl&#43;Alt&#43;Q</kbd>
 , you should get this:</p>
 <pre tabindex="0"><code>    console.log(String(234));
